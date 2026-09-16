@@ -1,27 +1,29 @@
 # TaskFlow – Task Management Web Application
 
-TaskFlow is a responsive task management web application built using React.js, JavaScript, HTML5, CSS3, and Bootstrap.
+TaskFlow is a responsive task management web application developed using React.js, JavaScript, HTML5, CSS3, and Bootstrap.
 
-It allows users to create, manage, search, filter, sort, edit, and complete tasks. Task data is stored in the browser using LocalStorage, so tasks remain available after refreshing the page.
-
-## 🚀 Live Demo
-
-https://task-flow-green-rho.vercel.app/
-
-## 📂 GitHub Repository
-
-https://github.com/Kshitija80/TaskFlow
+The application allows users to create, manage, search, filter, sort, edit, and complete tasks. Task data is stored using browser LocalStorage for persistence.
 
 ---
 
-## 📌 Features
+## Live Demo
+
+[TaskFlow – Live Demo](https://task-flow-green-rho.vercel.app/)
+
+## GitHub Repository
+
+[TaskFlow – GitHub Repository](https://github.com/Kshitija80/TaskFlow)
+
+---
+
+## Features
 
 - Add new tasks
 - Edit existing tasks
 - Delete tasks
 - Mark tasks as completed
 - Search tasks by title
-- Filter tasks:
+- Filter tasks by:
   - All
   - Pending
   - Completed
@@ -33,16 +35,16 @@ https://github.com/Kshitija80/TaskFlow
   - High
   - Medium
   - Low
-- Set task due date
 - Add task description
-- Task statistics/dashboard
-- Data persistence using LocalStorage
+- Set task due date
+- View task statistics
+- Store tasks using LocalStorage
 - Responsive design for desktop, tablet, and mobile devices
 - Clean and user-friendly interface
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Frontend
 
@@ -52,34 +54,36 @@ https://github.com/Kshitija80/TaskFlow
 - CSS3
 - Bootstrap
 
-### Concepts Used
+### Concepts and Features
 
 - React Components
 - React Hooks
 - useState
 - useEffect
-- Event Handling
-- Conditional Rendering
 - Props
-- JavaScript Array Methods
+- Controlled Components
+- Conditional Rendering
+- Event Handling
+- JavaScript Array Methods:
   - map()
   - filter()
   - find()
   - sort()
 - LocalStorage
 - Responsive Web Design
+- CRUD Operations
 
-### Tools
+### Development Tools
 
 - Visual Studio Code
+- Vite
 - Git
 - GitHub
 - Vercel
-- Vite
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 TaskFlow/
@@ -106,144 +110,208 @@ TaskFlow/
 └── README.md
 ```
 
-⚙️ Installation and Setup
+---
 
-Follow these steps to run TaskFlow locally.
+## Installation and Setup
 
-1. Clone the Repository
-   git clone https://github.com/Kshitija80/TaskFlow.git
-2. Navigate to the Project Folder
-   cd TaskFlow
-3. Install Dependencies
-   npm install
-4. Start the Development Server
-   npm run dev
+Follow the steps below to run TaskFlow locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Kshitija80/TaskFlow.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd TaskFlow
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the Development Server
+
+```bash
+npm run dev
+```
 
 The application will start on the local development server.
 
-Open the URL shown in the terminal, usually:
+Open the URL displayed in the terminal, usually:
 
+```text
 http://localhost:5173/
-🧪 Build for Production
+```
 
-To create a production build:
+---
 
+## Production Build
+
+To create a production build, run:
+
+```bash
 npm run build
+```
 
-To preview the production build locally:
+To preview the production build locally, run:
 
+```bash
 npm run preview
-💾 Data Storage
+```
 
-TaskFlow uses the browser's LocalStorage to store task data.
+---
 
-The application stores tasks using the following LocalStorage key:
+## Task Management
 
-taskflow_tasks
+Each task contains the following information:
 
-This allows the tasks to remain available even after refreshing or reopening the browser.
+- Task Title
+- Description
+- Due Date
+- Priority
+- Completion Status
 
-Note: Since LocalStorage is browser-based, the data is stored locally on the user's device and is not shared between different browsers or devices.
+Users can perform the following operations:
 
-🔍 Task Management
-
-Each task contains information such as:
-
-Task Title
-Description
-Due Date
-Priority
-Completion Status
-
-Users can manage tasks using:
-
+```text
 Add → Edit → Complete → Delete
-🔎 Search, Filter and Sort
+```
 
-TaskFlow provides different ways to manage a large number of tasks.
+---
 
-Search
+## Search, Filter and Sort
 
-Users can search tasks by their title.
+TaskFlow provides search, filtering, and sorting functionality to make task management easier.
 
-Filter
+### Search
+
+Users can search for tasks based on their title.
+
+### Filter
 
 Tasks can be filtered into:
 
-All
-Pending
-Completed
-Sort
+- All
+- Pending
+- Completed
+
+### Sort
 
 Tasks can be sorted according to:
 
-Title
-Due Date
-Priority
+- Title
+- Due Date
+- Priority
 
 Priority is ordered as:
 
+```text
 High → Medium → Low
-📱 Responsive Design
+```
 
-TaskFlow is designed to work across different screen sizes:
+---
 
-💻 Desktop
-📱 Mobile
-📱 Tablet
+## Data Persistence
 
-Bootstrap's responsive layout and utility classes are used to create the responsive interface.
+TaskFlow uses the browser's LocalStorage to store task data.
 
-🧠 Key Learning Outcomes
+The application uses the following LocalStorage key:
 
-Through this project, I practiced:
+```text
+taskflow_tasks
+```
 
-Building applications using React.js
-Creating reusable React components
-Managing application state using React Hooks
-Handling user input with controlled components
-Working with JavaScript array methods
-Implementing CRUD operations
-Using LocalStorage for data persistence
-Creating responsive layouts with Bootstrap
-Using Git and GitHub for version control
-Deploying a React application using Vercel
-🚀 Deployment
+This allows tasks to remain available after refreshing or reopening the browser.
 
-The application is deployed using Vercel.
+Since LocalStorage is browser-based, the data is stored locally on the user's device and is not shared between different browsers or devices.
 
-Deployment Flow
-Local React Project
-↓
-Git
-↓
-GitHub
-↓
-Vercel
-↓
+---
+
+## Responsive Design
+
+TaskFlow is designed to provide a responsive user experience across different screen sizes:
+
+- Desktop
+- Tablet
+- Mobile
+
+Bootstrap's responsive layout and utility classes are used to build the responsive interface.
+
+---
+
+## Key Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+- Developing applications using React.js
+- Creating reusable React components
+- Managing application state using React Hooks
+- Handling user input using controlled components
+- Working with JavaScript array methods
+- Implementing CRUD operations
+- Using LocalStorage for data persistence
+- Creating responsive layouts using Bootstrap
+- Using Git and GitHub for version control
+- Deploying React applications using Vercel
+
+---
+
+## Deployment
+
+TaskFlow is deployed using Vercel.
+
+### Deployment Workflow
+
+```text
+React Project
+     ↓
+    Git
+     ↓
+  GitHub
+     ↓
+  Vercel
+     ↓
 Live Website
+```
 
-GitHub is connected to the Vercel project so that changes pushed to the repository can be used for deployment.
+The GitHub repository is connected to the Vercel project. Changes pushed to the `main` branch can therefore be used for subsequent deployments.
 
-🔮 Future Enhancements
+---
 
-Possible future improvements include:
+## Future Enhancements
 
-User authentication
-Cloud database integration
-User-specific task management
-Task categories
-Task reminders and notifications
-Dark mode
-Drag-and-drop task management
-Calendar integration
-Backend API integration
-👩‍💻 Author
+The following features can be considered for future versions:
 
-Kshitija More
+- User authentication
+- Cloud database integration
+- User-specific task management
+- Task categories
+- Task reminders and notifications
+- Dark mode
+- Drag-and-drop task management
+- Calendar integration
+- Backend API integration
+
+---
+
+## Author
+
+**Kshitija More**
 
 B.Tech – Information Technology
 
-Project Links
-Live Demo: https://task-flow-green-rho.vercel.app/
-GitHub: https://github.com/Kshitija80/TaskFlow
+### Project Links
+
+- [Live Demo](https://task-flow-green-rho.vercel.app/)
+- [GitHub Repository](https://github.com/Kshitija80/TaskFlow)
+
+---
+
+## License
+
+This project was developed for learning, academic, and portfolio purposes.
